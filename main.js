@@ -96,8 +96,8 @@ peer.on('call', function(incomingCall) {
       var ovideoElement = document.createElement('video');
       ovideoElement.srcObject = remoteStream;
       ovideoElement.setAttribute("autoplay", "true");
-      ovideoElement.style.filter = 'blur(40px)';
-      ovideoElement.style.width = '40%';
+      ovideoElement.style.filter = 'blur(2.5rem)';
+      ovideoElement.style.width = '33%';
       ovideoElement.play();
       ovideoElement.setAttribute("id", incomingCall.peer);
       console.log('incomingCall: ', incomingCall.peer);
@@ -115,8 +115,8 @@ function makeCall(idToCall) {
         var ovideoElement = document.createElement('video');
         ovideoElement.srcObject = remoteStream;
         ovideoElement.setAttribute("autoplay", "true");
-        ovideoElement.style.filter = 'blur(40px)';
-        ovideoElement.style.width = '40%';
+        ovideoElement.style.filter = 'blur(2.5rem)';
+        ovideoElement.style.width = '33%';
         ovideoElement.play();
         console.log(idToCall);
         ovideoElement.setAttribute("id", idToCall);

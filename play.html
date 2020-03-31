@@ -1,35 +1,34 @@
 <html>
-
 <head>
-  <script src="peer.min.js"></script>
-  <script src="/socket.io/socket.io.js"></script>
-  <script type="text/javascript" src="main.js"> </script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/play.css">
 </head>
-
 <body>
-  <div class="wrap">
-    <div class="leftContainer">
-      <p id="explanation">Everyone is different but same. If you or anyone wants to
-        share somethin special (or not special), it'll appear below.
-        If it resonates with u, feel free to express it with a 'SAME, MAN'.
-        You'll incrementally be clearer and closer to others.
-      </p>
-      <br>
-      <div id='messages'>Waiting on a somethin something...</div>
+  <h1 class="header1">What do you have to hide?</h1>
+  <div class="play">
+    <section class="leftContainer">
+      <div id="explanation">
+        <p class="explain-text">Type something about yourself and click SEND.</p>
+        <p class="explain-text">Click SAME DUDE when you agree with the red box.</p>
+        <p class="explain-text">Pressing it will make your video feed become clearer.</p>
+        <p class="explain-text">You and others are slowly being revealed.</p>
+      </div> 
+      <div id='messages'>Waiting on some messages...</div>
       <div class="sendButton">
         <input class="sendBox" type="text" id="message" name="message">
-        <input type="button" id='sendMsgBtn' value="Send" onclick="sendMessage();">
-        <input type="button" id='confirmButton' value="SAME, MAN." onclick="sendConfirm();">
+        <input type="button" id='sendMsgBtn' value="SEND" onclick="sendMessage();">
+        <input type="button" id='confirmButton' value="SAME DUDE" onclick="sendConfirm();">
       </div>
       <div id='myVid'>
         <video id="myVideo" class="myVideo" muted></video>
       </div>
-    </div>
+    </section>
 
-    <div id='vidContainer' class='vidSection'>
-      <div id='otherVids' class="otherVideo">
-      </div>
-    </div>
-  </div>
+    <section id='vidContainer' class='vidSection'>
+      <div id='otherVids' class="otherVideo"></div>
+    </section>
+  </section>
+    <script src="peer.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="main.js"> </script>
+</body>
 </html>

@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+.header1 {
+    animation: move 15s ease infinite alternate;
+}
+@keyframes move {
+    0% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(8rem, 0);
+    }
+    
+    100% {
+      transform: translate(-8rem,0);
+    }
+  }
+.play {
+    margin: 3% 5%;
+    display: flex;
+}
+
+.leftContainer {
+    width: 33%;
+}
+
+.explain-text {
+    border-top: 0.1rem dotted grey;
+    border-left: 0.1rem dotted lightgrey;
+    border-right: 0.1rem dotted lightgrey;
+    box-shadow: 0.2rem 0 0 gray;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+}
+
+.sendButton {
+    font-size: 0.7rem;
+    margin-top: 3%;
+}
+
+.sendBox {
+    width: 63%;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    border: 0.15rem solid black;
+}
+
+.sendBox:hover {
+    border: 0.15rem dashed black;
+}
+
+#sendMsgBtn {
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0.2rem 0.2rem 0 red;
+}
+#sendMsgBtn:hover {
+    background-color: grey;
+    color: white;
+    box-shadow: 0.1rem 0.1rem 0 red;
+}
+
+#messages {
+    border: 0.1rem dotted red;
+    box-shadow: 0.3rem 0.3rem 0 lightgray;
+    border-radius: 1rem;
+    height: 7rem;
+    padding: 0.5rem;
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+.myvideo {
+    margin: 3.5rem 0 0 2rem;
+    filter: blur(2.5rem);
+    width: 80%;
+}
+
+#vidContainer {
+    width: 66%;
+    margin: 0 1rem;
+}
+
+#otherVids {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#confirmButton {
+    background-color: black;
+    color: white;
+    margin: 0 0.8rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    box-shadow: 0.2rem 0.2rem 0 grey;
+}
+
+#confirmButton:hover {
+    background-color: red;
+    box-shadow: 0.1rem 0.1rem 0 black;
+}
+
+  
