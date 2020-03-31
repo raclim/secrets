@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <script src="peer.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="main.js"> </script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="leftContainer">
+      <p id="explanation">Everyone is different but same. If you or anyone wants to
+        share somethin special (or not special), it'll appear below.
+        If it resonates with u, feel free to express it with a 'SAME, MAN'.
+        You'll incrementally be clearer and closer to others.
+      </p>
+      <br>
+      <div id='messages'>Waiting on a somethin something...</div>
+      <div class="sendButton">
+        <input class="sendBox" type="text" id="message" name="message">
+        <input type="button" id='sendMsgBtn' value="Send" onclick="sendMessage();">
+        <input type="button" id='confirmButton' value="SAME, MAN." onclick="sendConfirm();">
+      </div>
+      <div id='myVid'>
+        <video id="myVideo" class="myVideo" muted></video>
+      </div>
+    </div>
+
+    <div id='vidContainer' class='vidSection'>
+      <div id='otherVids' class="otherVideo">
+      </div>
+    </div>
+  </div>
+</html>
